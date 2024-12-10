@@ -1,0 +1,165 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #004e92;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Informações de Contato */
+.contact-info {
+    background-color: #28a745; /* Cor de fundo para destacar */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Restante do estilo do cabeçalho */
+header .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Grid layout */
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Títulos das seções */
+h2 {
+    font-size: 2rem;
+    color: #004e92;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul li a {
+    font-weight: bold;
+    color: #004e92;
+    font-size: 1.2rem;
+    display: block;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+ul li p {
+    margin-top: 8px;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Estilo para cursos em andamento */
+ul li a.in-progress {
+    color: #007BFF; /* Azul para cursos em andamento */
+}
+
+ul li a.in-progress:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para cursos concluídos */
+ul li a.completed {
+    color: #28a745; /* Verde para cursos concluídos */
+}
+
+ul li a.completed:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #004e92;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .main-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+}
