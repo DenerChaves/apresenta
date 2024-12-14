@@ -1,4 +1,78 @@
-/* Estilo para links */
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Estilo para o header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Estilo para o grid principal */
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos das seções */
+section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
 a {
     color: #007bff;
     text-decoration: none;
@@ -10,13 +84,11 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Estilo para o link de download (sem fundo azul) */
+/* Estilo para links de download */
 .download-link {
     font-size: 16px;
     font-weight: 500;
     color: #007bff;
-    display: inline-block;
-    margin: 10px 0;
 }
 
 .download-link:hover {
@@ -41,11 +113,11 @@ a:hover {
     }
 
     section {
-        padding: 10px;
+        padding: 15px;
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         text-align: center;
     }
 
@@ -53,30 +125,18 @@ a:hover {
         font-size: 1rem;
         text-align: justify;
     }
-
-    .grid-item {
-        padding: 20px;
-    }
-}
-
-/* Em telas maiores, exibe como grid */
-@media (min-width: 769px) {
-    .main-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-    }
 }
 
 /* Estilo do footer */
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #f1f1f1;
+    background-color: #333;
+    color: #fff;
     font-size: 14px;
 }
 
 footer p {
     margin: 0;
-    color: #555;
 }
+
