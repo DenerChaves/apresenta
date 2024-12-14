@@ -125,6 +125,22 @@ ul li p {
     font-size: 1rem;
 }
 
+.download-link {
+    display: inline-block;
+    background-color: #004e92;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-link:hover {
+    background-color: #00376b;
+}
+
+
 /* Estilo para cursos em andamento */
 ul li a.in-progress {
     color: #007BFF; /* Azul para cursos em andamento */
