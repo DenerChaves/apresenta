@@ -1,159 +1,135 @@
-/* Reset de margens e padding para garantir consistência */
+/* Reset de estilo */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Definindo a fonte padrão */
+/* Body e fontes */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #333;
     background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Estilo do cabeçalho */
+h1, h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Títulos das seções */
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #3498db; /* Cor azul para destacar os títulos */
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container de cabeçalho */
 header {
-    background-color: #004d40;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+    background-color: #3498db;
+    color: white;
+    padding: 20px 0;
 }
 
 .header-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .profile-photo {
-    width: 150px;
-    height: 150px;
     border-radius: 50%;
-    margin-bottom: 15px;
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
 }
 
 h1 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
-/* Layout do conteúdo principal */
-main {
+/* Layout de Grid Principal */
+.main-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
+    padding: 20px;
 }
 
-/* Seções do site */
+/* Estilos das Seções */
 .grid-item {
-    background-color: #fff;
+    background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #004d40;
+#projetos ul, #cursos ul {
+    list-style-type: none;
 }
 
-ul {
-    list-style: none;
-}
-
-ul li {
+#projetos li, #cursos li {
     margin-bottom: 15px;
 }
 
-a {
-    text-decoration: none;
-    color: #004d40;
-    font-weight: bold;
+#cursos li a.in-progress {
+    color: #f39c12;
 }
 
-a:hover {
-    color: #00897b;
+#cursos li a.completed {
+    color: #2ecc71;
 }
 
-/* Links de cursos */
-.in-progress {
-    color: #ff6f00;
-}
-
-.completed {
-    color: #388e3c;
-}
-
-.in-progress:hover,
-.completed:hover {
-    color: #004d40;
-}
-
-/* Contato */
-#contato a {
-    color: #004d40;
-}
-
-#contato a:hover {
-    color: #00897b;
-}
-
+/* Estilos para os links de download */
 .download-link {
     display: inline-block;
     margin-top: 10px;
-    background-color: #004d40;
-    color: white;
     padding: 10px 20px;
-    text-decoration: none;
+    background-color: #3498db;
+    color: white;
     border-radius: 5px;
+    text-align: center;
 }
 
 .download-link:hover {
-    background-color: #00897b;
+    background-color: #2980b9;
 }
 
-/* Rodapé */
+/* Estilo do Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #004d40;
+    background-color: #2c3e50;
     color: white;
-    font-size: 1rem;
+    padding: 10px 0;
+    margin-top: 30px;
 }
 
-/* Estilo para dispositivos móveis */
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
     .header-container {
-        padding: 15px;
+        flex-direction: column;
     }
 
     .profile-photo {
-        width: 120px;
-        height: 120px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    main {
-        padding: 0 10px;
-    }
-
-    .grid-item {
-        padding: 15px;
+        margin-bottom: 10px;
     }
 }
